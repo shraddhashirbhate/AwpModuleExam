@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+        <!------Header Row------>
+        <div class="row bg-dark align-items-center justify-content-center text-light sticky-bottom" style="height:10vh">
+            <div class="col-6 "> SignIn </div>
+            <div class="col-6 d-flex justify-content-end"> Logout </div>
+        </div>
+        <!-- post Row 1 -->
+        <div>
+            <div class="row  justify-content-center ">
+                <div class="col-12 col-md-6 d-flex flex-column ">
+
+                    <!------1st Row------->
+                    <div class="row border rounded mt-1 text-dark justify-content-center align-items-center"
+                        style=" height:40vh;"> Hello
+                    </div>
+
+                    <!---------2nd Row----------->
+                    <div class="row justify-content-center">
+                        <!------Like Button------->
+                        <div class="col-3 p-0">
+                            <button onclick="LikeHere(this)" type="button" class="btn btn-outline-secondary btn-block">
+                                Like <span> 0 </span> </button>
+                        </div>
+                        <!------Input Here-------->
+                        <div class="col-6 p-0">
+                            <input type="input" placeholder="Type here.." class="form-control form-contrl-sm" />
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="col-3 p-0">
+                            <button onclick="CommentHere(this)" type="button"
+                                class="btn btn-outline-secondary btn-block"> Comment </button>
+                        </div>
+                    </div>
+
+
+                    <div class=" d-flex flex-column" id="commentContainer">
+                        <div class="row mt-1">
+                            <div class="col-10 p-0" style="word-wrap: break-word;">
+                                Sample comment here
+                            </div>
+                            <div class="col-2 p-0">
+                                <button onclick="deleteComment(this)" class="btn btn-sm btn-block btn-outline-danger">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- post Row 2 -->
+        <div>
+            <div class="row  justify-content-center">
+                <div class="col-12 col-md-6 d-flex flex-column ">
+
+                    <!------1st Row------->
+                    <div class="row border rounded mt-1 text-dark justify-content-center align-items-center"
+                        style=" height:40vh;"> Hello
+                    </div>
+
+                    <!---------2nd Row----------->
+                    <div class="row justify-content-center">
+                        <!------Like Button------->
+                        <div class="col-3 p-0">
+                            <button onclick="LikeHere(this)" type="button" class="btn btn-outline-secondary btn-block">
+                                Like <span> 0 </span> </button>
+                        </div>
+                        <!------Input Here-------->
+                        <div class="col-6 p-0">
+                            <input type="input" placeholder="Type here.." class="form-control form-contrl-sm" />
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="col-3 p-0">
+                            <button onclick="CommentHere(this)" type="button"
+                                class="btn btn-outline-secondary btn-block"> Comment </button>
+                        </div>
+                    </div>
+
+
+                    <div class=" d-flex flex-column" id="commentContainer">
+                        <div class="row mt-1">
+                            <div class="col-10 p-0" style="word-wrap: break-word;">
+                                Sample comment here
+                            </div>
+                            <div class="col-2 p-0">
+                                <button onclick="deleteComment(this)" class="btn btn-sm btn-block btn-outline-danger">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- post Row 3 -->
+        <div>
+            <div class="row  justify-content-center">
+                <div class="col-12 col-md-6 d-flex flex-column ">
+
+                    <!------1st Row------->
+                    <div class="row border rounded mt-1 text-dark justify-content-center align-items-center"
+                        style=" height:40vh;"> Hello
+                    </div>
+
+                    <!---------2nd Row----------->
+                    <div class="row justify-content-center">
+                        <!------Like Button------->
+                        <div class="col-3 p-0">
+                            <button onclick="LikeHere(this)" type="button" class="btn btn-outline-secondary btn-block">
+                                Like <span> 0 </span> </button>
+                        </div>
+                        <!------Input Here-------->
+                        <div class="col-6 p-0">
+                            <input type="input" placeholder="Type here.." class="form-control form-contrl-sm" />
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="col-3 p-0">
+                            <button onclick="CommentHere(this)" type="button"
+                                class="btn btn-outline-secondary btn-block"> Comment </button>
+                        </div>
+                    </div>
+
+
+                    <div class=" d-flex flex-column" id="commentContainer">
+                        <div class="row mt-1">
+                            <div class="col-10 p-0" style="word-wrap: break-word;">
+                                Sample comment here
+                            </div>
+                            <div class="col-2 p-0">
+                                <button onclick="deleteComment(this)" class="btn btn-sm btn-block btn-outline-danger">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- post Row 4 -->
+        <div>
+            <div class="row  justify-content-center">
+                <div class="col-12 col-md-6 d-flex flex-column ">
+
+                    <!------1st Row------->
+                    <div class="row border rounded mt-1 text-dark justify-content-center align-items-center"
+                        style=" height:40vh;"> Hello
+                    </div>
+
+                    <!---------2nd Row----------->
+                    <div class="row justify-content-center">
+                        <!------Like Button------->
+                        <div class="col-3 p-0">
+                            <button onclick="LikeHere(this)" type="button" class="btn btn-outline-secondary btn-block">
+                                Like <span> 0 </span> </button>
+                        </div>
+                        <!------Input Here-------->
+                        <div class="col-6 p-0">
+                            <input type="input" placeholder="Type here.." class="form-control form-contrl-sm" />
+                        </div>
+                        <!-- Comment Button -->
+                        <div class="col-3 p-0">
+                            <button onclick="CommentHere(this)" type="button"
+                                class="btn btn-outline-secondary btn-block"> Comment </button>
+                        </div>
+                    </div>
+
+
+                    <div class=" d-flex flex-column" id="commentContainer">
+                        <div class="row mt-1">
+                            <div class="col-10 p-0" style="word-wrap: break-word;">
+                                Sample comment here
+                            </div>
+                            <div class="col-2 p-0">
+                                <button onclick="deleteComment(this)" class="btn btn-sm btn-block btn-outline-danger">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+<script src="1.js"> </script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title> Login </title>
+
+    <style>
+        html,
+        body {
+            background: linear-gradient(120deg, pink, white);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid " style="background: none;">
+        <!-- form -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12 col-md-6 bg-light mt-5 p-4">
+                <label for="emailId"> Email Address </label>
+                <br>
+                <input type="email" id="emailId" placeholder="enter email" />
+                <br>
+
+                <label for="username"> Username </label>
+                <br>
+                <input type="text" id="username" placeholder="enter username" />
+                <br>
+
+                <label for="password"> Password </label>
+                <br>
+                <input type="password" id="pass" placeholder="enter password" />
+                <br>
+                <br>
+
+                <button type="button" class="btn btn-outline-dark" onclick="submitForm()" id="submit-button"> submit
+                </button>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="row mt-5 justify-content-center" id="DetailBox">
+            <div class="col-12 col-md-6 bg-light mt-5 p-5" id="colbox" style="display: none;">
+                <div style="font-weight: bold; font-size: 30px"> Details: </div>
+                <div style="font-weight: bold; font-size: 20px"> Email: </div>
+                <div style="font-weight: bold; font-size: 20px"> Username: </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="2.js"> </script>
+
+</html>
